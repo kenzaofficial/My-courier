@@ -1,0 +1,13 @@
+{% macro list(img = 'null', title = 'null', desc = 'null') %}
+  <li>
+    {% if img != 'null' %}
+      <img src="{{ img }}" alt="{{ alt }}" >
+    {% endif %}
+    {% if title != 'null' %}
+      <h4>{{ title }}</h4>
+    {% endif %}
+    {% if desc != 'null' %}
+      <p>{{ desc }}</p>
+    {% endif %}
+  </li>
+{% endmacro %}
