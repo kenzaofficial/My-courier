@@ -1,0 +1,10 @@
+{% from 'components/list/list.njk' import list %}
+{% import './data.njk' as cars %}
+
+<section>
+  <ul class="cars-park__list">
+    {% for car in cars.users %}
+      {{ list( img="log", title=car.name, desc=car.surname) }}
+    {% endfor %}
+  </ul>
+</section>
