@@ -6,20 +6,25 @@ $L: 992px;
 $XL: 1200px;
 
 //palette
+$color-white: #fff;
 $color-rose: #ff5993;
 $color-black: #2d2928;
-$color-light-grey: #f4f4f4;
+$color-grey: #f4f4f4;
 $color-blue: #0658be;
 
 // Colors
-$color-button-bg: $color-rose;
 $color-title: $color-rose;
-$color-svg-fill: $color-blue;
-$color-primary-bg: $color-light-grey;
 $color-text: $color-black;
 
-// Fonts
+//backgrounds
+$bg-light: $color-white;
+$bg-primary: $color-grey;
+$bg-secondary: $color-rose;
 
+//fills
+$fill-svg-primary: $color-blue;
+
+// Fonts=
 $font-family-base: "Onest", "Helvetica", "Arial", sans-serif;
 $font-weight-regular: 400;
 $font-size-base: 14px;
