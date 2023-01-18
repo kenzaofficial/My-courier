@@ -75,6 +75,11 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 a {
   background-color: transparent;
 }
@@ -176,7 +181,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -186,7 +192,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 

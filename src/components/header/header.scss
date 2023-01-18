@@ -1,0 +1,324 @@
+body {
+  background-color: violet;
+}
+.header {
+  padding: 15px 0;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  // justify-content: space-between;
+}
+.header__logo {
+  align-self: flex-start;
+}
+.logo {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 5;
+  height: auto;
+}
+.logo__img {
+  display: block;
+  max-width: 100%;
+}
+.header__menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: -100%;
+  padding: 90px 15px 10px;
+  max-width: 250px;
+  height: 100%;
+  transition: 0.3s;
+  &::before,
+  &::after {
+    position: fixed;
+    content: "";
+    right: -100%;
+    width: 100%;
+    z-index: 10;
+    max-width: 250px;
+    min-height: 90px;
+    background-color: $bg-menu;
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  @media (min-width: $M) {
+    height: auto;
+    padding: 0;
+    position: static;
+    max-width: 570px;
+    width: auto;
+    margin-left: auto;
+    background-color: transparent;
+  }
+  @media (min-width: $XL) {
+    max-width: 900px;
+  }
+}
+
+.header-menu--is-active .header__menu {
+  @media (max-width: $M) {
+    color: $color-white;
+    right: 0;
+    overflow: auto;
+    background: $bg-menu;
+    &::before,
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+.menu__list {
+  margin: 0;
+  line-height: 1;
+  text-align: right;
+  @media (min-width: $M) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  @media (min-width: $XL) {
+    column-gap: 50px;
+  }
+  li {
+    @media (max-width: $M) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.menu__link {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  @media (max-width: $M) {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+}
+
+.header__burger-button {
+  position: absolute;
+  width: 19px;
+  height: 12px;
+  top: 3px;
+  right: 0;
+  z-index: 3;
+  @media (min-width: $M) {
+    display: none;
+  }
+}
+
+.header__burger-button::before,
+.header__burger-button::after {
+  content: "";
+  background-color: $color-white;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s ease 0s;
+  border-radius: 2px;
+}
+
+.header__burger-button::before {
+  top: 0;
+  left: 0;
+}
+
+.header__burger-button::after {
+  bottom: 0;
+  width: 12px;
+  right: 0;
+}
+
+.header__burger-button span {
+  position: absolute;
+  background-color: $color-white;
+  right: 0;
+  width: 14px;
+  height: 2px;
+  top: 5px;
+  border-radius: 2px;
+  transition: all 0.3s ease 0s;
+}
+
+.header-menu--is-active .header__burger-button span {
+  transform: scale(0);
+}
+
+.header-menu--is-active .header__burger-button::before {
+  transform: rotate(45deg);
+  top: 5px;
+  background-color: $bg-secondary;
+}
+
+.header-menu--is-active .header__burger-button::after {
+  transform: rotate(-45deg);
+  bottom: 5px;
+  background-color: $bg-secondary;
+  width: 19px;
+}
+
+.header-menu--is-active .header__contacts {
+  @media (max-width: $M) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    max-width: 200px;
+    right: 50px;
+    gap: 5px 20px;
+  }
+}
+
+.header__contacts {
+  display: none;
+  font-weight: 500;
+  color: #fff;
+  @media (min-width: $M) {
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 10px;
+    margin-left: auto;
+  }
+  @media (min-width: $XL) {
+    max-width: 500px;
+    column-gap: 40px;
+  }
+}
+
+.header__contacts-field {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  fill: transparent;
+  stroke: $color-white;
+  transition: 0.3s;
+  font-size: 0;
+  flex-shrink: 0;
+  &:hover {
+    transform: scale(1.1);
+    fill: $color-black;
+    stroke: $bg-secondary;
+  }
+}
+
+.header__contacts-field--tel {
+  line-height: 1;
+  @media (min-width: $L) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  @media (min-width: $XL) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.header__contacts-field--mail {
+  line-height: 1;
+  @media (min-width: $L) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @media (min-width: $XL) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* поведение меню при выключенном джаваскрипте */
+
+@media (max-width: $S) {
+  .no-js .header {
+    position: static;
+    padding: 10px 0 0;
+    background-color: $bg-menu;
+  }
+
+  .no-js .header__container {
+    padding: 0;
+  }
+
+  .no-js .header__body {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .no-js .header__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-white;
+    box-shadow: 0px 3px 3px -3px $color-white;
+    margin: 0;
+
+    &--dark {
+      display: none;
+    }
+  }
+
+  .no-js .menu__list {
+    text-align: center;
+    margin: 0;
+
+    li {
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid $color-white;
+      box-shadow: 0px 3px 3px -3px $color-white;
+    }
+
+    a {
+      font-size: 18px;
+      color: $color-white;
+
+      @media (max-width: $S) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .no-js .header__menu {
+    position: static;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    // background-color: red;
+  }
+
+  .no-js .header__menu::before {
+    display: none;
+  }
+
+  .no-js .header__burger-button {
+    display: none;
+  }
+
+  .no-js .header__menu {
+    right: 0;
+    height: auto;
+    margin: 0 auto;
+  }
+}
