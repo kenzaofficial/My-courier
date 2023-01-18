@@ -1,17 +1,15 @@
 {% from 'common/njk/head.njk' import head %}
 {% from 'common/njk/scripts.njk' import scripts %}
-
 <!DOCTYPE html>
 <html lang="ru">
-
   {{ head('index', 'Мой курьер') }}
-  {% include 'components/header/header.njk' %}
-
-  <body class="p-main ">
-    <main></main>
-    {# <div class="overlay visually-hidden"></div> #}
+  <body>
+    <main>
+      <!-- <svg width="40" height="40" aria-hidden="true" role="img" focusable="false" aria-label="social media reddit">
+        <use href="./assets/img/sprite.svg#icon-wallet"></use>
+      </svg> -->
+      {% include "pages/main/sections/car-park/car-park.njk" %}
+    </main>
     {{ scripts('index') }}
-
   </body>
-
 </html>
