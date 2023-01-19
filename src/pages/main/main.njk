@@ -1,9 +1,7 @@
 {% from 'common/njk/head.njk' import head %}
 {% from 'common/njk/scripts.njk' import scripts %}
-
 <!DOCTYPE html>
 <html lang="ru">
-
   {{ head('index', 'Мой курьер') }}
   {% include 'components/header/header.njk' %}
 
@@ -11,7 +9,5 @@
     <main></main>
     <div class="overlay visually-hidden"></div>
     {{ scripts('index') }}
-
   </body>
-
 </html>
