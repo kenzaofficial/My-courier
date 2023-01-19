@@ -9,6 +9,7 @@ doc.addEventListener('DOMContentLoaded', () => {
   const body = doc.querySelector('body');
   const headerBody = doc.querySelector('.header__body');
   const overlay = doc.querySelector('.overlay');
+
   if (body.classList.contains('no-js')) {
     body.classList.remove('no-js');
   }
@@ -29,11 +30,7 @@ doc.addEventListener('DOMContentLoaded', () => {
     menuLink[i].addEventListener('click', () => {
       headerBody.classList.remove('header-menu--is-active');
       body.classList.remove('scroll-lock');
+      overlay.classList.add('visually-hidden');
     });
   }
 });
-
-// }
-
-// mobileMenu();
-// export { mobileMenu };
