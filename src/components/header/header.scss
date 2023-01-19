@@ -1,7 +1,8 @@
 .header {
-  position: relative;
-  z-index: 10;
+  position: fixed;
   padding: 15px 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header__body {
@@ -10,9 +11,7 @@
   align-items: center;
   column-gap: 10px;
 }
-.header__logo {
-  align-self: flex-start;
-}
+
 .logo {
   position: relative;
   flex-shrink: 0;

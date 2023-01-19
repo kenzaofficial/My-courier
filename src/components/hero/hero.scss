@@ -1,0 +1,53 @@
+body {
+  background-color: violet;
+}
+.hero {
+  .hero__img {
+    text-align: right;
+    img {
+      max-width: 100%;
+      top: 0;
+      right: 0;
+    }
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  fieldset {
+    padding: 0;
+    border: none;
+  }
+
+  legend {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.hero__container {
+}
+
+.form-field input {
+  padding: 7px 30px;
+  width: 100%;
+  min-height: 43px;
+  color: $color-text;
+  font-size: 12px;
+  line-height: 28px;
+  background-color: $color-white;
+  border: 0.2px solid $color-blue;
+  border-radius: 29px;
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.form-hero__field {
+  margin-bottom: 12px;
+}

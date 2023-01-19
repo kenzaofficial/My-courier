@@ -6,7 +6,9 @@
   {% include 'components/header/header.njk' %}
 
   <body class="p-main no-js">
-    <main></main>
+    <main>
+      {% include 'components/hero/hero.njk' %}
+    </main>
     <div class="overlay visually-hidden"></div>
     {{ scripts('index') }}
   </body>
