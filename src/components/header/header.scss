@@ -100,7 +100,18 @@
 
 .menu__link {
   display: inline-block;
+  padding: 5px;
   font-size: 16px;
+  transition: 0.3s;
+  &:hover {
+    color: $color-hover;
+    transform: scale(1.1);
+    text-shadow: 0 0 1px $color-hover;
+  }
+
+  &:active {
+    text-shadow: 0 0 5px $color-hover;
+  }
 }
 
 .header__menu--is-active .menu__link {
