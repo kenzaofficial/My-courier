@@ -13,20 +13,25 @@ $color-grey: #f4f4f4;
 $color-blue: #0658be;
 
 // Colors
-$color-title: $color-rose;
-$color-text: $color-black;
+$color-title-primary: $color-rose;
+$color-title-secondary: $color-blue;
+$color-text-primary: $color-black;
+$color-text-secondary: $color-white;
 $color-hover: $color-rose;
 
 //backgrounds
 $bg-light: $color-white;
 $bg-primary: $color-grey;
 $bg-secondary: $color-rose;
-$bg-menu: $color-blue;
+$bg-thirdly: $color-blue;
+
+//borders
+$border-primary: $color-blue;
+$border-secondary: $color-white;
+$border-thirdly: $color-rose;
 
 //fills
 $fill-svg-primary: $color-blue;
-
-//gradients
 
 // Fonts=
 $font-family-base: "Onest", "Helvetica", "Arial", sans-serif;

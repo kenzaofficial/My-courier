@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   {{ head('index', 'Мой курьер') }}
-  {% include 'components/header/header.njk' %}
-
-  <body class="p-main no-js">
-    <main></main>
+  <body class="no-js">
+    {% include 'components/header/header.njk' %}
+    <main>
+      {% include 'pages/main/sections/hero/hero.njk' %}
+    </main>
     <div class="overlay visually-hidden"></div>
     {{ scripts('index') }}
   </body>
