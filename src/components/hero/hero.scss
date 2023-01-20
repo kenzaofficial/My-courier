@@ -2,21 +2,41 @@ body {
   background-color: violet;
 }
 .hero {
+  padding-bottom: 60px;
+  @include media(M) {
+    position: relative;
+    padding: 100px 0 220px;
+  }
   .hero__img {
     text-align: right;
-    img {
-      max-width: 100%;
+    @include media(M) {
+      position: absolute;
       top: 0;
       right: 0;
+      max-width: 430px;
+      @include media(XL) {
+        max-width: 100%;
+      }
     }
   }
+
   h1 {
     font-size: 28px;
     line-height: 36px;
+    @include media(M) {
+      max-width: 400px;
+      font-size: 48px;
+      line-height: 60px;
+    }
   }
   p {
     font-size: 13px;
     line-height: 18px;
+    @include media(M) {
+      max-width: 523px;
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
   fieldset {
     padding: 0;
@@ -27,13 +47,22 @@ body {
     margin-bottom: 10px;
     font-size: 12px;
     line-height: 15px;
+    @include media(M) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
 .hero__container {
+  position: relative;
 }
 
-.form-field input {
+.form {
+  max-width: 516px;
+}
+
+.form__field-text input {
   padding: 7px 30px;
   width: 100%;
   min-height: 43px;
@@ -46,8 +75,11 @@ body {
   &::placeholder {
     opacity: 0.5;
   }
+  @include media(M) {
+    padding: 14px 30px;
+  }
 }
 
-.form-hero__field {
+.form-hero__field-text {
   margin-bottom: 12px;
 }

@@ -1,6 +1,12 @@
 <section class="hero">
-  <div class="hero__img"><img src="./assets/img/hero-mobile.png" width="206" height="174"
-      alt="Курьер на фоне множества коробок"></div>
+  <div class="hero__img">
+    <picture>
+                <source media="(min-width:768px)"
+                  srcset="./assets/img/hero-desktop.png" width="904" height="706">
+                <img src="./assets/img/hero-mobile.png" width="206" height="174"
+      alt="Курьер на фоне множества коробок">
+              </picture>
+    </div>
   <div class="container hero__container">
     <h1>Доставка для
       бизнеса и семьи</h1>
@@ -10,19 +16,19 @@
       <fieldset>
         <legend>Заполните данные для отправки заявки</legend>
       </fieldset>
-      <div class="form-field form-hero__field">
+      <div class="form__field-text form-hero__field-text">
         <label for="form-addressee" class="visually-hidden"></label>
         <input type="text" name="form-addressee" required id="form-addressee" placeholder="Адрес отправки">
       </div>
-      <div class="form-field form-hero__field">
+      <div class="form__field-text form-hero__field-text">
         <label for="form-destination" class="visually-hidden"></label>
         <input type="text" name="form-destination" required id="form-destination" placeholder="Адрес доставки">
       </div>
-      <div class="form-field form-hero__field">
+      <div class="form__field-text form-hero__field-text">
         <label for="sender-name" class="visually-hidden"></label>
         <input type="text" name="sender-name" required id="sender-name" placeholder="ФИО отправителя">
       </div>
-      <div class="form-field form-hero__field">
+      <div class="form__field-text form-hero__field-text">
         <label for="form-tel" class="visually-hidden"></label>
         <input type="tel" name="form-tel" required id="form-tel" placeholder="Номер телефона">
       </div>
