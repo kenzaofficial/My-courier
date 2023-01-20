@@ -20,13 +20,13 @@
   font-size: 12px;
   line-height: 28px;
   font-weight: 500;
-  color: $color-white;
+  color: $color-text-secondary;
   border-radius: 29px;
   background-color: $bg-secondary;
   cursor: pointer;
   transition: 0.3s;
   &:focus-within {
-    border: 1px solid $color-blue;
+    outline: 1px solid $bg-thirdly;
   }
   @include media(M) {
     padding: 15px 40px;
@@ -104,7 +104,7 @@ html {
   font-size: $font-size-base;
   font-weight: $font-weight-regular;
   line-height: 1.5;
-  color: $color-text;
+  color: $color-text-primary;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   -moz-osx-font-smoothing: grayscale;
@@ -125,7 +125,7 @@ body {
     margin: 0;
     font-family: $font-family-base;
     font-weight: 500;
-    color: $color-text;
+    color: $color-text-primary;
   }
 }
 
@@ -142,7 +142,7 @@ select {
   font-family: $font-family-base;
   font-size: 16px;
   font-weight: $font-weight-regular;
-  color: $color-text;
+  color: $color-text-primary;
 }
 
 textarea {
@@ -156,13 +156,13 @@ textarea {
     display: none;
   }
   &::-webkit-input-placeholder {
-    color: $color-text;
+    color: $color-text-primary;
   }
   &::-moz-placeholder {
-    color: $color-text;
+    color: $color-text-primary;
   }
   &:-ms-input-placeholder {
-    color: $color-text;
+    color: $color-text-primary;
   }
   &:focus {
     &::-webkit-input-placeholder {
