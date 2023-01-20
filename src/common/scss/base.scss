@@ -26,13 +26,13 @@
   cursor: pointer;
   transition: 0.3s;
   &:focus-within {
-    outline: 1px solid $bg-thirdly;
+    outline: 1px solid $border-primary;
   }
   @include media(M) {
     padding: 15px 40px;
     font-size: 18px;
     &:hover {
-      background-color: $bg-thirdly;
+      background-color: $border-thirdly;
     }
     &:active {
       background-color: $color-black;
