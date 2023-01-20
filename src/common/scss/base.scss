@@ -13,6 +13,17 @@
   }
 }
 
+.button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 12px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $color-white;
+  border-radius: 29px;
+  background-color: $bg-secondary;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
