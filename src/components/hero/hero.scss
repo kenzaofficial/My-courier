@@ -1,19 +1,21 @@
 body {
-  background-color: violet;
+  background-color: $bg-primary;
 }
 .hero {
   padding-bottom: 60px;
+
   @include media(M) {
-    position: relative;
-    padding: 100px 0 220px;
+    padding: 155px 0 220px;
   }
   .hero__img {
+    max-height: 174px;
     text-align: right;
     @include media(M) {
       position: absolute;
       top: 0;
       right: 0;
       max-width: 430px;
+      max-height: 706px;
       @include media(XL) {
         max-width: 100%;
       }
@@ -21,33 +23,46 @@ body {
   }
 
   h1 {
+    margin-bottom: 10px;
     font-size: 28px;
     line-height: 36px;
     @include media(M) {
+      margin-bottom: 12px;
       max-width: 400px;
       font-size: 48px;
       line-height: 60px;
     }
   }
   p {
+    margin: 0;
+    margin-bottom: 31px;
     font-size: 13px;
     line-height: 18px;
+    span {
+      display: block;
+    }
     @include media(M) {
+      margin-bottom: 20px;
       max-width: 523px;
       font-size: 20px;
       line-height: 28px;
+      span {
+        display: inline;
+      }
     }
   }
   fieldset {
+    margin: 0;
     padding: 0;
     border: none;
   }
 
   legend {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 12px;
     line-height: 15px;
     @include media(M) {
+      margin-bottom: 10px;
       font-size: 16px;
       line-height: 20px;
     }
@@ -76,10 +91,18 @@ body {
     opacity: 0.5;
   }
   @include media(M) {
-    padding: 14px 30px;
+    padding: 18px 42px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 .form-hero__field-text {
   margin-bottom: 12px;
+  &:last-of-type {
+    margin-bottom: 18px;
+    @include media(M) {
+      margin-bottom: 13px;
+    }
+  }
 }

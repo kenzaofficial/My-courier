@@ -3,6 +3,9 @@
   padding: 15px 0;
   width: 100%;
   z-index: 10;
+  @include media(M) {
+    padding: 27px 0;
+  }
 }
 
 .header__body {
@@ -21,6 +24,10 @@
 .logo__img {
   display: block;
   max-width: 100%;
+  @include media(M) {
+    width: 138px;
+    height: 31px;
+  }
 }
 .header__menu {
   position: fixed;
@@ -40,7 +47,7 @@
       z-index: 10;
       max-width: 250px;
       min-height: 90px;
-      background-color: $bg-menu;
+      background-color: $bg-thirdly;
       transition: all 0.3s ease 0s;
     }
 
@@ -68,7 +75,7 @@
     color: $color-white;
     right: 0;
     overflow: auto;
-    background: $bg-menu;
+    background: $bg-thirdly;
     &::before,
     &::after {
       right: 0;
@@ -265,7 +272,7 @@
   .no-js .header {
     position: static;
     padding: 10px 0 0;
-    background-color: $bg-menu;
+    background-color: $bg-thirdly;
   }
 
   .no-js .header__container {

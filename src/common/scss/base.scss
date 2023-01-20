@@ -23,9 +23,21 @@
   color: $color-white;
   border-radius: 29px;
   background-color: $bg-secondary;
+  cursor: pointer;
+  transition: 0.3s;
+  &:focus-within {
+    border: 1px solid $color-blue;
+  }
   @include media(M) {
     padding: 15px 40px;
     font-size: 18px;
+    &:hover {
+      transform: scale(1.05);
+      background-color: $bg-thirdly;
+    }
+    &:active {
+      background-color: $color-black;
+    }
   }
 }
 
