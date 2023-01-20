@@ -1,0 +1,50 @@
+.form {
+  max-width: 516px;
+}
+
+.form__field-text input {
+  padding: 7px 30px;
+  width: 100%;
+  min-height: 43px;
+  color: $color-text;
+  font-size: 12px;
+  line-height: 28px;
+  background-color: $color-white;
+  border: 0.2px solid $color-blue;
+  border-radius: 29px;
+  &::placeholder {
+    opacity: 0.5;
+  }
+  @include media(M) {
+    padding: 18px 42px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 15px;
+  @include media(M) {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.form__field-text {
+  margin-bottom: 12px;
+  &:last-of-type {
+    margin-bottom: 18px;
+    @include media(M) {
+      margin-bottom: 13px;
+    }
+  }
+}

@@ -116,7 +116,7 @@
   }
   &:hover {
     color: $color-hover;
-    transform: scale(1.1);
+    transform: scale(1.07);
     text-shadow: 0 0 1px $color-hover;
   }
 
@@ -236,7 +236,7 @@
   font-size: 0;
   flex-shrink: 0;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
     fill: $color-black;
     stroke: $bg-secondary;
   }

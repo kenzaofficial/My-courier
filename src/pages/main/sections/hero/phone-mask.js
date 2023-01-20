@@ -60,7 +60,4 @@ const initPhoneMask = () => {
     });
   }
 };
-
 initPhoneMask();
-
-// export { initPhoneMask };

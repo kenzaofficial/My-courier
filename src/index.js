@@ -1,4 +1,5 @@
 require('./pages/main/main');
 
 require('./components/header/header');
-require('./components/hero/phone-mask');
+require('./pages/main/sections/hero/phone-mask');
+require('./components/form/form');
