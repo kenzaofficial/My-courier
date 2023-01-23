@@ -41,15 +41,8 @@
     min-height: 306px;
     text-align: center;
     img {
-      margin-bottom: 15px;
-      @include media(S) {
-        min-height: 173px;
+      width: 100%;
       }
-      @include media(XL) {
-        min-height: 173px;
-        margin-bottom: 65px;
-      }
-    }
   }
   h3,
   p {
