@@ -71,13 +71,12 @@
   }
 }
 
-a {
-  color: $color-rose;
-}
-
 .car-park p:last-child {
   margin-bottom: 0;
   text-align: center;
+  a {
+    color: $color-rose;
+  }
   @include media(XL) {
     text-align: start;
     font-size: 18px;

@@ -9,7 +9,7 @@
       продаж</p>
     <ul class="car-park__list">
       {% for car in data.cars %}
-      {{ list( img=car.img, title=car.title, desc=car.description) }}
+        {{ list( img=car.img, title=car.title, desc=car.description) }}
       {% endfor %}
     </ul>
     <p>Стоимость доставки малогабаритных отправлений от 125 рублей, срок выполнения доставки от 2-х дней.<br>
