@@ -1,10 +1,18 @@
 {% from 'components/list/list.njk' import list %}
-{% import './car-park-list-data.njk' as cars %}
+{% import './data.njk' as data %}
 
-<section>
-  <ul class="cars-park__list">
-    {% for car in cars.items %}
-      {{ list( img="log", title=car.name, desc=car.surname) }}
-    {% endfor %}
-  </ul>
+<section class="car-park">
+  <div class="car-park__container container">
+    <h2>Наш автопарк</h2>
+    <p>Мы предоставляем автомобили для перевозки грузов от 1 до 1200 кг.<br>
+      Если у вас есть более крупный заказ или вам нужно подробное предложение, пожалуйста, свяжитесь с нашим отделом
+      продаж</p>
+    <ul class="car-park__list">
+      {% for car in data.cars %}
+        {{ list( img=car.img, title=car.title, desc=car.description) }}
+      {% endfor %}
+    </ul>
+    <p>Стоимость доставки малогабаритных отправлений от 125 рублей, срок выполнения доставки от 2-х дней.<br>
+      Узнать о тарифах доставки грузов можно в соответствующем <a href="#">разделе</a> или отправив заявку.</p>
+  </div>
 </section>
