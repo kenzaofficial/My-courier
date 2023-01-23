@@ -1,7 +1,6 @@
 .car-park {
   padding: 10px 0 30px;
   background-color: $bg-primary;
-  background-color: violet;
   @include media(XL) {
     padding: 100px 0;
   }
