@@ -1,9 +1,9 @@
 {% from 'components/list/list.njk' import list %}
-{% import './data.njk' as cars %}
+{% import './car-park-list-data.njk' as cars %}
 
 <section>
   <ul class="cars-park__list">
-    {% for car in cars.users %}
+    {% for car in cars.items %}
       {{ list( img="log", title=car.name, desc=car.surname) }}
     {% endfor %}
   </ul>
