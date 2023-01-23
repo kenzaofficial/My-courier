@@ -3,15 +3,15 @@
 }
 
 .form__field-text input {
-  padding: 7px 30px;
   width: 100%;
   min-height: 43px;
-  color: $color-text-primary;
-  font-size: 12px;
-  line-height: 28px;
-  background-color: $color-white;
+  padding: 7px 30px;
   border: 0.2px solid $color-blue;
   border-radius: 29px;
+  background-color: $color-white;
+  font-size: 12px;
+  line-height: 28px;
+  color: $color-text-primary;
   &::placeholder {
     opacity: 0.5;
   }

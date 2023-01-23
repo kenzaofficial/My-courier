@@ -1,8 +1,8 @@
 .header {
   position: fixed;
-  padding: 15px 0;
-  width: 100%;
   z-index: 10;
+  width: 100%;
+  padding: 15px 0;
   @include media(M) {
     padding: 27px 0;
   }
@@ -17,10 +17,11 @@
 
 .logo {
   position: relative;
-  flex-shrink: 0;
   z-index: 5;
+  flex-shrink: 0;
   height: auto;
 }
+
 .logo__img {
   display: block;
   max-width: 100%;
@@ -29,40 +30,37 @@
     height: 31px;
   }
 }
+
 .header__menu {
   position: fixed;
-  width: 100%;
   top: 0;
   right: -100%;
-  padding: 90px 15px 10px;
+  width: 100%;
   max-width: 250px;
   height: 100%;
+  padding: 90px 15px 10px;
   transition: 0.3s;
   @include media(MOBILE) {
     &::before {
-      position: fixed;
       content: "";
+      position: fixed;
+      top: 0;
       right: -100%;
-      width: 100%;
       z-index: 10;
+      width: 100%;
       max-width: 250px;
       min-height: 90px;
       background-color: $bg-thirdly;
       transition: all 0.3s ease 0s;
     }
-
-    &::before {
-      top: 0;
-    }
   }
-
   @include media(M) {
-    height: auto;
-    padding: 0;
     position: static;
-    max-width: 570px;
     width: auto;
+    max-width: 570px;
+    height: auto;
     margin-left: auto;
+    padding: 0;
     background-color: transparent;
   }
   @include media(XL) {
@@ -72,10 +70,10 @@
 
 .header-menu--is-active .header__menu {
   @include media(MOBILE) {
-    color: $color-text-secondary;
     right: 0;
-    overflow: auto;
     background: $bg-thirdly;
+    color: $color-text-secondary;
+    overflow: auto;
     &::before,
     &::after {
       right: 0;
@@ -85,8 +83,8 @@
 
 .menu__list {
   margin: 0;
-  line-height: 1;
   text-align: right;
+  line-height: 1;
   @include media(M) {
     display: flex;
     flex-wrap: wrap;
@@ -109,15 +107,13 @@
   padding: 5px;
   font-size: 16px;
   transition: 0.3s;
-
   &--is-current {
-    color: $color-title-primary;
     text-shadow: 0 0 3px $color-hover;
+    color: $color-title-primary;
   }
   &:hover {
     color: $color-hover;
   }
-
   &:active {
     color: $color-blue;
   }
@@ -126,18 +122,18 @@
 .header__menu--is-active .menu__link {
   @include media(MOBILE) {
     font-size: 20px;
-    line-height: 22px;
     font-weight: 500;
+    line-height: 22px;
   }
 }
 
 .header__burger-button {
   position: absolute;
-  width: 19px;
-  height: 12px;
   top: 3px;
   right: 0;
   z-index: 3;
+  width: 19px;
+  height: 12px;
   @include media(M) {
     display: none;
   }
@@ -146,12 +142,12 @@
 .header__burger-button::before,
 .header__burger-button::after {
   content: "";
-  background-color: $bg-light;
   position: absolute;
   width: 100%;
   height: 2px;
-  transition: all 0.3s ease 0s;
   border-radius: 2px;
+  background-color: $bg-light;
+  transition: all 0.3s ease 0s;
 }
 
 .header__burger-button::before {
@@ -160,19 +156,19 @@
 }
 
 .header__burger-button::after {
+  right: 0;
   bottom: 0;
   width: 12px;
-  right: 0;
 }
 
 .header__burger-marker {
   position: absolute;
-  background-color: $bg-light;
+  top: 5px;
   right: 0;
   width: 14px;
   height: 2px;
-  top: 5px;
   border-radius: 2px;
+  background-color: $bg-light;
   transition: all 0.3s ease 0s;
 }
 
@@ -181,28 +177,16 @@
 }
 
 .header-menu--is-active .header__burger-button::before {
-  transform: rotate(45deg);
   top: 5px;
+  transform: rotate(45deg);
   background-color: $bg-secondary;
 }
 
 .header-menu--is-active .header__burger-button::after {
-  transform: rotate(-45deg);
   bottom: 5px;
-  background-color: $bg-secondary;
+  transform: rotate(-45deg);
   width: 19px;
-}
-
-.header-menu--is-active .header__contacts {
-  @include media(MOBILE) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: absolute;
-    max-width: 200px;
-    right: 50px;
-    gap: 5px 20px;
-  }
+  background-color: $bg-secondary;
 }
 
 .header__contacts {
@@ -210,13 +194,13 @@
   font-weight: 500;
   color: #fff;
   @include media(M) {
-    align-self: flex-start;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    align-self: flex-start;
+    margin-left: auto;
     column-gap: 30px;
     row-gap: 10px;
-    margin-left: auto;
   }
   @include media(XL) {
     max-width: 500px;
@@ -224,18 +208,30 @@
   }
 }
 
+.header-menu--is-active .header__contacts {
+  @include media(MOBILE) {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 200px;
+    gap: 5px 20px;
+  }
+}
+
 .header__contacts-field {
   display: flex;
-  align-items: center;
-  column-gap: 5px;
-  fill: transparent;
-  stroke: $color-text-secondary;
-  transition: 0.3s;
-  font-size: 0;
   flex-shrink: 0;
+  align-items: center;
+  fill: transparent;
+  font-size: 0;
+  transition: 0.3s;
+  column-gap: 5px;
+  stroke: $color-text-secondary;
   &:hover {
-    stroke: $bg-secondary;
     color: $color-text-primary;
+    stroke: $bg-secondary;
   }
 }
 
@@ -271,65 +267,52 @@
     padding: 10px 0 0;
     background-color: $bg-thirdly;
   }
-
   .no-js .header__container {
     padding: 0;
   }
-
   .no-js .header__body {
-    height: auto;
     flex-direction: column;
+    height: auto;
   }
-
   .no-js .header__logo {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid $border-secondary;
-    box-shadow: 0px 3px 3px -3px $border-secondary;
-    margin: 0;
+    box-shadow: 0 3px 3px -3px $border-secondary;
   }
-
   .no-js .menu__list {
-    text-align: center;
     margin: 0;
-
+    text-align: center;
     li {
       margin: 0;
       padding: 10px 0;
       border-bottom: 1px solid $border-secondary;
-      box-shadow: 0px 3px 3px -3px $border-secondary;
+      box-shadow: 0 3px 3px -3px $border-secondary;
     }
-
     a {
       font-size: 18px;
       color: $color-text-secondary;
-
       @include media(MOBILE) {
         font-size: 14px;
       }
     }
   }
-
   .no-js .header__menu {
     position: static;
-    padding: 0;
-    max-width: 100%;
+    right: 0;
     width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
   }
-
   .no-js .header__menu::before {
     display: none;
   }
-
   .no-js .header__burger-button {
     display: none;
-  }
-
-  .no-js .header__menu {
-    right: 0;
-    height: auto;
-    margin: 0 auto;
   }
 }

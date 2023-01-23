@@ -1,10 +1,11 @@
 .advantages {
   padding: 30px 0 45px;
   @include media(XL) {
-    padding: 110px 0 40px;
     min-height: 750px;
+    padding: 110px 0 40px;
   }
 }
+
 .advantages__container {
   padding: 0 24px;
   @include media(M) {
@@ -17,6 +18,7 @@
     }
   }
 }
+
 .advantages__body {
   @include media(XL) {
     display: grid;
@@ -24,6 +26,7 @@
     column-gap: 45px;
   }
 }
+
 .advantages__list {
   margin-bottom: 13px;
   li {
@@ -42,8 +45,8 @@
     }
     p {
       margin: 0;
-      font-weight: 500;
       font-size: 14px;
+      font-weight: 500;
       line-height: 20px;
       @include media(M) {
         font-size: 16px;
@@ -61,6 +64,7 @@
     gap: 30px 45px;
   }
 }
+
 .advantages__img {
   text-align: center;
   img {
