@@ -7,6 +7,14 @@
     margin-bottom: 22px;
   }
 }
+
+.advantages__body{
+  @include media(XL){
+    display: grid;
+    grid-template-columns: 735px auto;
+  }
+  
+}
 .advantages__list {
   margin-bottom: 13px;
   li {
@@ -34,13 +42,21 @@
       }
     }
   }
+  @include media(S){
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 30px;
+  }
+  @include media(XL){
+    gap: 60px;
+  }
 }
 .advantages__img {
   text-align: center;
   img {
     display: inline-block;
     width: 100%;
-
+    max-width: 400px;
     height: auto;
   }
 }

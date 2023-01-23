@@ -1,13 +1,13 @@
 {% from 'components/list/list.njk' import list %}
-{% import './advantages-list-data.njk' as advantages %}
+{% import './data.njk' as data %}
 
 <section class="advantages">
   <div class="advantages__container container">
     <h2>Почему клиенты выбирают нас</h2>
     <div class="advantages__body">
       <ul class="advantages__list">
-        {% for advantageItem in advantages.items %}
-        {{ list( title=advantageItem.title, desc=advantageItem.description) }}
+        {% for advantage in data.advantages %}
+         {{ list( title=advantage.title, desc=advantage.description) }}
         {% endfor %}
       </ul>
       <div class="advantages__img">
