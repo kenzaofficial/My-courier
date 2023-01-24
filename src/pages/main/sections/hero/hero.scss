@@ -1,5 +1,5 @@
 .hero {
-  display: flex;
+  display: flow-root;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 60px;
@@ -55,4 +55,7 @@
 
 .hero__container {
   position: relative;
+  @include media(XL){
+    margin-top: 155px;
+  }
 }
