@@ -12,6 +12,7 @@
     }
   }
   p {
+    margin: 0;
     text-align: center;
     font-weight: 500;
     line-height: 20px;
@@ -23,13 +24,13 @@
   }
 }
 
-.delivery__container{
+.delivery__container {
   max-width: 380px;
-  @include media(S){
+  @include media(S) {
     max-width: 500px;
   }
-  @include media(M){
-    max-width: none;
+  @include media(M) {
+    max-width: 1280px;
   }
 }
 
