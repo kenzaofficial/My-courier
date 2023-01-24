@@ -69,6 +69,7 @@
 }
 
 .header-menu--is-active .header__menu {
+  text-align: right;
   @include media(MOBILE) {
     right: 0;
     background: $bg-thirdly;
@@ -83,7 +84,6 @@
 
 .menu__list {
   margin: 0;
-  text-align: right;
   line-height: 1;
   @include media(M) {
     display: flex;
@@ -91,7 +91,7 @@
     gap: 20px;
   }
   @include media(XL) {
-    column-gap: 50px;
+    column-gap: 30px;
   }
   li {
     @include media(MOBILE) {
@@ -189,9 +189,12 @@
   background-color: $bg-secondary;
 }
 
+.contacts {
+  font-weight: 500;
+}
+
 .header__contacts {
   display: none;
-  font-weight: 500;
   color: #fff;
   @include media(M) {
     display: flex;
@@ -220,22 +223,25 @@
   }
 }
 
-.header__contacts-field {
+.contacts__field {
   display: flex;
   flex-shrink: 0;
   align-items: center;
   fill: transparent;
-  font-size: 0;
   transition: 0.3s;
   column-gap: 5px;
+}
+
+.contacts__field--header {
+  font-size: 0;
   stroke: $color-text-secondary;
   &:hover {
     color: $color-text-primary;
-    stroke: $bg-secondary;
+    stroke: $color-hover;
   }
 }
 
-.header__contacts-field--tel {
+.contacts__field--tel {
   line-height: 1;
   @include media(L) {
     font-size: 16px;
@@ -247,7 +253,7 @@
   }
 }
 
-.header__contacts-field--mail {
+.contacts__field--mail {
   line-height: 1;
   @include media(L) {
     font-size: 14px;
