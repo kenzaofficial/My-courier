@@ -1,6 +1,9 @@
 .car-park {
   padding: 10px 0 30px;
   background-color: $bg-primary;
+  @include media(M) {
+    padding: 50px 0;
+  }
   @include media(XL) {
     padding: 100px 0;
   }
@@ -12,8 +15,7 @@
   }
   p {
     max-width: 900px;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     line-height: 20px;
     @include media(M) {
       max-width: 930px;
@@ -25,29 +27,32 @@
 }
 
 .car-park__list {
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   @include media(S) {
     display: grid;
     grid-template-columns: auto auto;
+    margin-bottom: 20px;
+  }
+  @include media(M) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 40px;
+    margin-bottom: 30px;
   }
   @include media(XL) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 30px 70px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
   li {
-    min-height: 306px;
     text-align: center;
-    img {
-      margin-bottom: 15px;
-      @include media(S) {
-        min-height: 173px;
-      }
+    .list-item__img-wrapper {
       @include media(XL) {
-        min-height: 173px;
-        margin-bottom: 65px;
+        margin-bottom: 8px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        max-width: 240px;
+        margin: 0 auto;
       }
     }
   }

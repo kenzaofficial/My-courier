@@ -1,0 +1,14 @@
+{% from 'components/list/list.njk' import list %}
+{% import './data.njk' as data %}
+
+<section class="delivery">
+  <div class="delivery__container container">
+    <h2>Доставим всё, что угодно</h2>
+    <ul class="delivery__list">
+      {% for delivery in data.deliveries %}
+        {{ list( img=delivery.img, title=delivery.title) }}
+      {% endfor %}
+    </ul>
+    <p>А так же цветы, продукты, подарки, косметика, спорттовары и многое другое.</p>
+  </div>
+</section>

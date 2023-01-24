@@ -1,7 +1,7 @@
 {% macro list(img = 'null', title = 'null', desc = 'null') %}
-  <li>
+  <li class="list-item">
     {% if img != 'null' %}
-      <img src="{{ img }}" alt="{{ alt }}" >
+      <div class="list-item__img-wrapper"><img src="{{ img }}" alt="{{ alt }}"></div>
     {% endif %}
     {% if title != 'null' %}
       <h3>{{ title }}</h3>
