@@ -192,6 +192,7 @@
 .contacts {
   font-weight: 500;
 }
+
 .header__contacts {
   display: none;
   color: #fff;
@@ -230,6 +231,7 @@
   transition: 0.3s;
   column-gap: 5px;
 }
+
 .contacts__field--header {
   font-size: 0;
   stroke: $color-text-secondary;
@@ -238,6 +240,7 @@
     stroke: $color-hover;
   }
 }
+
 .contacts__field--tel {
   line-height: 1;
   @include media(L) {
