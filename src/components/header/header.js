@@ -8,6 +8,20 @@ doc.addEventListener('DOMContentLoaded', () => {
   const headerBody = doc.querySelector('.header__body');
   const overlay = doc.querySelector('.overlay');
 
+  window.onscroll = function () {
+    headerScrolled();
+  };
+
+  function headerScrolled() {
+    const header = document.querySelector('.header');
+
+    if (doc.body.scrollTop > 40 || doc.documentElement.scrollTop > 40) {
+      header.classList.add('header--is-scrolled');
+    } else {
+      header.classList.remove('header--is-scrolled');
+    }
+  }
+
   if (body.classList.contains('no-js')) {
     body.classList.remove('no-js');
   }

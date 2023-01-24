@@ -2,7 +2,7 @@
   padding: 45px 0;
   background: $bg-primary;
   @include media(XL) {
-    padding: 60px 0 50px;
+    padding: 65px 0 50px;
   }
 }
 
@@ -31,7 +31,7 @@
   @include media(XL) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .footer__logo {
     margin-bottom: 20px;
