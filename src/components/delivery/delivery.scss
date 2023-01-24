@@ -23,6 +23,16 @@
   }
 }
 
+.delivery__container{
+  max-width: 380px;
+  @include media(S){
+    max-width: 500px;
+  }
+  @include media(M){
+    max-width: none;
+  }
+}
+
 .delivery__list {
   display: grid;
   margin: 0 0 40px 0;
@@ -42,7 +52,7 @@
     display: grid;
     place-items: center;
   }
-  .list-item__img {
+  .list-item__img-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
