@@ -31,20 +31,33 @@
     display: grid;
     grid-template-columns: auto auto;
   }
-  @include media(XL) {
-    display: grid;
+  @include media(M) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 40px;
+    margin-bottom: 20px;
+  }
+  @include media(L) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px 70px;
+    gap: 30px 50px;
     margin-bottom: 25px;
+  }
+  @include media(XL) {
+    gap: 30px 70px;
+    margin-bottom: 30px;
   }
   li {
     min-height: 306px;
     text-align: center;
-    img {
-      display: block;
-      max-width: 240px;
-      margin: 0 auto;
-      width: 100%;
+    .list-item__img {
+      @include media(XL) {
+        margin-bottom: 8px;
+      }
+      img {
+        display: block;
+        max-width: 240px;
+        margin: 0 auto;
+        width: 100%;
+      }
     }
   }
   h3,
