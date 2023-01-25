@@ -1,0 +1,16 @@
+{% from 'common/njk/head.njk' import head %}
+{% from 'common/njk/scripts.njk' import scripts %}
+{% from 'components/footer/footer.njk' import footer %}
+<!DOCTYPE html>
+<html lang="ru">
+  {{ head('index', 'Мой курьер') }}
+  <body class="no-js">
+    {% include 'components/header/header.njk' %}
+    <main>
+      {% include 'pages/contacts/sections/hero/hero.njk' %}
+    </main>
+    {{ footer('light') }}
+    <div class="overlay visually-hidden"></div>
+    {{ scripts('index') }}
+  </body>
+</html>

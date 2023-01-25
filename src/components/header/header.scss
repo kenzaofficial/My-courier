@@ -137,6 +137,9 @@
   z-index: 3;
   width: 19px;
   height: 12px;
+  @include media(S) {
+    width: 39px;
+  }
   @include media(M) {
     display: none;
   }
@@ -162,6 +165,9 @@
   right: 0;
   bottom: 0;
   width: 12px;
+  @include media(S) {
+    width: 20px;
+  }
 }
 
 .header__burger-marker {
@@ -173,6 +179,9 @@
   border-radius: 2px;
   background-color: $bg-light;
   transition: all 0.3s ease 0s;
+  @include media(S) {
+    width: 30px;
+  }
 }
 
 .header-menu--is-active {
@@ -191,6 +200,10 @@
   top: 5px;
   transform: rotate(45deg);
   background-color: $bg-secondary;
+  @include media(S) {
+    width: 50%;
+    left: 50%;
+  }
 }
 
 .header-menu--is-active .header__burger-button::after {
@@ -198,6 +211,9 @@
   transform: rotate(-45deg);
   width: 19px;
   background-color: $bg-secondary;
+  @include media(S) {
+    width: 50%;
+  }
 }
 
 .contacts {

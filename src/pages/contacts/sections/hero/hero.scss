@@ -1,0 +1,6 @@
+.hero__img img {
+  @include media(L) {
+    width: 874px;
+    height: auto;
+  }
+}

@@ -19,6 +19,7 @@ const paths = {
       'pages/main/main.njk',
       'pages/tracking/tracking.njk',
       'pages/tariffs/tariffs.njk',
+      'pages/contacts/contacts.njk',
     ],
     dist: '',
   },
