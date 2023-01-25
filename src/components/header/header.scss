@@ -124,14 +124,9 @@
   background-color: rgba($color-black, $alpha: 0.7);
   .menu__link {
     color: $color-text-secondary;
-  }
-}
-
-.header__menu--is-active .menu__link {
-  @include media(MOBILE) {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 22px;
+    &--is-current {
+      color: $color-title-primary;
+    }
   }
 }
 
@@ -178,6 +173,14 @@
   border-radius: 2px;
   background-color: $bg-light;
   transition: all 0.3s ease 0s;
+}
+
+.header-menu--is-active {
+  @include media(MOBILE) {
+    .menu__link {
+      font-size: 18px;
+    }
+  }
 }
 
 .header-menu--is-active .header__burger-marker {
