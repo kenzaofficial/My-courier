@@ -48,22 +48,22 @@
   }
   .footer__menu {
     text-align: center;
-    .menu__list {
-      margin-bottom: 45px;
-      @include media(XL) {
+  }
+  .menu__list {
+    margin-bottom: 45px;
+    @include media(XL) {
+      margin-bottom: 0;
+      li {
         margin-bottom: 0;
       }
-      li {
-        margin-bottom: 5px;
-      }
     }
-    .menu__link {
-      font-size: 12px;
-      line-height: 15px;
-      @include media(L) {
-        font-size: 16px;
-        line-height: 28px;
-      }
+  }
+  .menu__link {
+    font-size: 12px;
+    line-height: 15px;
+    @include media(L) {
+      font-size: 16px;
+      line-height: 28px;
     }
   }
 }
