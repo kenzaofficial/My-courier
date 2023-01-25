@@ -17,6 +17,7 @@ const paths = {
   njk: {
     src: [
       'pages/main/main.njk',
+      'pages/tracking/tracking.njk',
     ],
     dist: '',
   },

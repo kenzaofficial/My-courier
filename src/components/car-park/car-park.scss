@@ -1,5 +1,5 @@
 .car-park {
-  padding: 10px 0 20px;
+  padding: 10px 0 30px;
   background-color: $bg-primary;
   @include media(M) {
     padding: 50px 0;
@@ -40,6 +40,7 @@
   }
   @include media(XL) {
     gap: 30px 70px;
+    margin-bottom: 40px;
   }
   li {
     text-align: center;

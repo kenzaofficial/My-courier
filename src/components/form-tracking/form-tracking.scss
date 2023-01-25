@@ -1,0 +1,22 @@
+.form-tracking {
+  margin-bottom: 55px;
+}
+
+.form-tracking__body {
+  @include media(M) {
+    display: flex;
+    column-gap: 8px;
+  }
+  .form__field-text {
+    @include media(M) {
+      width: 100%;
+      max-width: 340px;
+      margin-bottom: 0;
+    }
+  }
+  .form__button {
+    @include media(M) {
+      max-width: 180px;
+    }
+  }
+}
