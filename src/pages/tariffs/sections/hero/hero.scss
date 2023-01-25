@@ -1,4 +1,18 @@
 .hero--tariffs {
+  .hero__img img {
+    @include media(L) {
+      width: 874px;
+      height: auto;
+    }
+  }
+  h1 {
+    max-width: 180px;
+    margin: -35px 0 30px;
+    @include media(S) {
+      max-width: none;
+      margin: 0 0 55px;
+    }
+  }
   .container {
     @include media(MOBILE) {
       padding: 0 14px;
@@ -6,64 +20,136 @@
   }
 }
 
-.hero__benefits{
-    margin: 0;
+.hero__benefits {
+  margin: 0 0 30px 0;
+  @include media(S) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  @include media(L) {
+    display: grid;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+  }
 }
 
-.benefits__item:not(:last-child){
-    margin-bottom: 10px;
+.card-benefits__list {
+  margin-bottom: 20px;
+  padding: 25px 15px;
+  border-radius: 16px;
+  background-color: rgba($bg-primary, $alpha: 0.5);
+  @include media(XL) {
+    margin-bottom: 40px;
+    padding: 33px 25px 18px;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    @include media(L) {
+      column-gap: 10px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      @include media(L) {
+        margin-bottom: 27px;
+      }
+    }
+    .list-item__img-wrapper {
+      width: 16px;
+      height: 16px;
+      @include media(L) {
+        width: 22px;
+        height: 22px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    h3 {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+      @include media(L) {
+        font-size: 14px;
+      }
+    }
+  }
 }
+
+.benefits__item {
+  margin: 0 auto;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .card-benefits {
-  max-width: 373px;
-  padding: 30px 15px 22px;
-  background: $bg-light;
+  max-width: 410px;
+  margin: 0 auto;
+  padding: 30px 22px 22px;
   border-radius: 32px;
+  background: $bg-light;
+  @include media(S) {
+    max-width: 350px;
+  }
+  @include media(L) {
+    max-width: 375px;
+  }
+  @include media(XL) {
+    padding: 33px 30px 35px;
+  }
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 24px;
     font-weight: 500;
     line-height: 31px;
+    @include media(XL) {
+      font-size: 32px;
+      line-height: 48px;
+    }
   }
   p {
     margin: 0 0 10px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     color: rgba($color-text-primary, $alpha: 0.5);
+    @include media(XL) {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
   }
   .card-benefits__alert {
-    margin-bottom: 15px;
-    padding: 15px 30px;
+    margin-bottom: 8px;
+    padding: 18px 30px;
+    border-radius: 16px;
+    background-color: rgba($bg-thirdly, $alpha: 0.05);
+    text-align: center;
     font-size: 12px;
     font-weight: 500;
     line-height: 20px;
-    text-align: center;
     color: $color-text-thirdly;
-    background-color: rgba($bg-thirdly, $alpha: 0.05);
-    border-radius: 16px;
-  }
-  .card-benefits__list {
-    padding: 25px 20px;
-    background-color: rgba($bg-light, $alpha: 0.5);
-    border-radius: 16px;
-    .list-item {
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      column-gap: 5px;
-      .list-item__img-wrapper {
-        width: 16px;
-        height: 16px;
-        img {
-          width: 100%;
-        }
-      }
-
-      h3 {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 20px;
-      }
+    @include media(L) {
+      padding: 25px 30px;
+      font-size: 14px;
     }
+  }
+}
+
+.hero__more-info {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  @include media(L) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  a {
+    color: $color-text-thirdly;
   }
 }
