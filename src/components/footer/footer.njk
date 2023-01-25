@@ -1,38 +1,40 @@
-<footer class="footer">
-  <div class="footer__container container">
-    <div class="footer__body">
-      <a class="footer__logo logo">
-        <img src="assets/img/logo.svg" class="logo__img" alt="my courier logo" width="92" height="20">
-      </a>
-      <nav class="footer__menu menu">
-        <ul class="menu__list">
-          <li>
-            <a href="#packagesend" class="menu__link menu__link--is-current">Отправить посылку</a>
-          </li>
-          <li>
-            <a href="#packagetrack" class="menu__link">Отследить</a>
-          </li>
-          <li>
-            <a href="#tariffs" class="menu__link">Тарифы</a>
-          </li>
-          <li>
-            <a href="#contacts" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer__contacts contacts">
-        <a href="tel:+7495-921-34-44" class="contacts__field contacts__field--tel contacts__field--footer">
-          <svg width="21" height="21" aria-hidden="true" role="img" focusable="false" aria-label="telephone">
-            <use href="./assets/img/sprite.svg#icon-tel"></use>
-          </svg>
-          +7 495 921-34-44</a>
-      </div>
+{% macro footer(mode = 'dark') %}
+  <footer class="footer footer--{{ mode }}">
+    <div class="footer__container container">
+      <div class="footer__body">
+        <a class="footer__logo logo">
+          <img src="assets/img/logo.svg" class="logo__img" alt="my courier logo" width="92" height="20">
+        </a>
+        <nav class="footer__menu menu">
+          <ul class="menu__list">
+            <li>
+              <a href="#packagesend" class="menu__link menu__link--is-current">Отправить посылку</a>
+            </li>
+            <li>
+              <a href="#packagetrack" class="menu__link">Отследить</a>
+            </li>
+            <li>
+              <a href="#tariffs" class="menu__link">Тарифы</a>
+            </li>
+            <li>
+              <a href="#contacts" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts contacts">
+          <a href="tel:+7495-921-34-44" class="contacts__field contacts__field--tel contacts__field--footer">
+            <svg width="21" height="21" aria-hidden="true" role="img" focusable="false" aria-label="telephone">
+              <use href="./assets/img/sprite.svg#icon-tel"></use>
+            </svg>
+            +7 495 921-34-44</a>
+        </div>
 
+      </div>
+      <p>
+        Контактный e-mail support@konfzz.ru<br>
+        Контактный телефон: +7 495 921-34-44 ООО "А+" ИНН 7325109660, ОГРН 1117325012298, КПП 732501001<br>
+        Ульяновская обл., г. Ульяновск, ул. Карла Либкнехта, д. 24/5А стр. 1 офис 65
+      </p>
     </div>
-    <p>
-      Контактный e-mail support@konfzz.ru<br>
-      Контактный телефон: +7 495 921-34-44 ООО "А+" ИНН 7325109660, ОГРН 1117325012298, КПП 732501001<br>
-      Ульяновская обл., г. Ульяновск, ул. Карла Либкнехта, д. 24/5А стр. 1 офис 65
-    </p>
-  </div>
-</footer>
+  </footer>
+{% endmacro %}

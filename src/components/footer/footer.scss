@@ -1,9 +1,16 @@
 .footer {
   padding: 45px 0;
-  background: $bg-primary;
   @include media(XL) {
     padding: 65px 0 50px;
   }
+}
+
+.footer--dark {
+  background-color: $bg-primary;
+}
+
+.footer--light {
+  background-color: $bg-light;
 }
 
 .footer__container {
