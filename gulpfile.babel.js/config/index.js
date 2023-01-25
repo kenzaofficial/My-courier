@@ -18,6 +18,7 @@ const paths = {
     src: [
       'pages/main/main.njk',
       'pages/tracking/tracking.njk',
+      'pages/tariffs/tariffs.njk',
     ],
     dist: '',
   },
