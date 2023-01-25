@@ -1,0 +1,15 @@
+{% from 'components/list/list.njk' import list %}
+{% macro traffic-list(items, nameList) %}
+  <ul class="list {{ nameList }}">
+    {% for item in items %}
+      <li class="item {{ item.class }}">
+        <h3>{{ item.title }}</h3>
+        <h4>{{ item.subTitle }}</h4>
+        <div>{{ item.alert }}</div>
+        {% for benefit in data.benefits %}
+          {{ list( img=benefit.img, title=benefit.title, desc=benefit.description) }}
+        {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

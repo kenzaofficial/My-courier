@@ -1,33 +1,31 @@
 .hero--tracking {
   min-height: 695px;
-}
-
-.hero__list {
-  display: grid;
-  max-width: 526px;
-  margin: 0;
-  grid-template-columns: auto auto;
-  gap: 12px;
-}
-
-.hero__item {
-  position: relative;
-  padding-left: 20px;
-  background-image: url(../img/check-marker.svg);
-  background-repeat: no-repeat;
-  background-position: 0 50%;
-  background-size: 10px;
-  font-size: 9px;
-  font-weight: 500;
-  line-height: 11px;
-  @include media(S) {
-    font-size: 12px;
-    line-height: 14px;
+  .hero__list {
+    display: grid;
+    max-width: 526px;
+    margin: 0;
+    grid-template-columns: auto auto;
+    gap: 12px;
   }
-  @include media(M) {
-    padding-left: 30px;
-    background-size: 20px;
-    font-size: 18px;
-    line-height: 28px;
+  .hero__item {
+    position: relative;
+    padding-left: 20px;
+    background-image: url(../img/check-marker.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 10px;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11px;
+    @include media(S) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    @include media(M) {
+      padding-left: 30px;
+      background-size: 20px;
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 }
