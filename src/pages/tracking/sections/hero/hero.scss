@@ -1,0 +1,89 @@
+.hero {
+  min-height: 700px;
+  padding-bottom: 60px;
+  background-color: $bg-primary;
+  @include media(M) {
+    min-height: 950px;
+    padding: 85px 0;
+  }
+  .hero__img {
+    max-height: 174px;
+    text-align: right;
+    @include media(M) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 430px;
+      max-height: 706px;
+      @include media(XL) {
+        max-width: 100%;
+      }
+    }
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 36px;
+    @include media(M) {
+      max-width: 400px;
+      margin-bottom: 12px;
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+  p {
+    margin: 0;
+    margin-bottom: 31px;
+    font-size: 13px;
+    line-height: 18px;
+    span {
+      display: block;
+    }
+    @include media(M) {
+      max-width: 523px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 28px;
+      span {
+        display: inline;
+      }
+    }
+  }
+}
+
+.hero__container {
+  position: relative;
+  @include media(XL) {
+    margin-top: 70px;
+  }
+}
+
+.hero__list {
+  display: grid;
+  max-width: 526px;
+  margin: 0;
+  grid-template-columns: auto auto;
+  gap: 12px;
+}
+
+.hero__item {
+  position: relative;
+  padding-left: 20px;
+  background-image: url(../img/check-marker.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 10px;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11px;
+  @include media(S) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  @include media(M) {
+    padding-left: 30px;
+    background-size: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
