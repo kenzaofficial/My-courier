@@ -15,14 +15,15 @@
 @import "components/header/header";
 @import "components/form/form";
 @import "components/form-tracking/form-tracking";
+@import "components/form-contacts/form-contacts";
 @import "pages/main/sections/hero/hero";
 @import "components/advantages/advantages";
 @import "components/car-park/car-park";
 @import "components/delivery/delivery";
 @import "components/footer/footer";
-@import "pages/tracking/sections/hero/hero";
-@import "pages/tariffs/sections/hero/hero";
 
 // Pages
 
-@import "pages/main/main";
+@import "pages/tracking/sections/hero/hero";
+@import "pages/tariffs/sections/hero/hero";
+@import "pages/contacts/sections/hero/hero";

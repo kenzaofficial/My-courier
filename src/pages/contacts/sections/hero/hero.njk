@@ -1,0 +1,20 @@
+{% from 'components/list/list.njk' import list %}
+{% import './data.njk' as data %}
+
+<section class="hero hero--contacts">
+  <div class="hero__img">
+    <img src="./assets/img/purple-bg.png" width="200" height="160" alt="пурпурный фон">
+  </div>
+  <div class="container hero__container">
+    <h1>Контактная информация</h1>
+    <div class="hero--contacts__body">
+    {% include 'components/form-contacts/form-contacts.njk' %}
+    <ul class="hero--contacts__list">
+      {% for contact in data.contacts %}
+      {{ list( img=contact.img, title=contact.title,href=contact.href,
+      linkText=contact.linkText) }}
+      {% endfor %}
+    </ul>
+  </div>
+  </div>
+</section>

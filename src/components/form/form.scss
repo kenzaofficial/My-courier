@@ -2,9 +2,10 @@
   max-width: 516px;
 }
 
-.form__field-text input {
+.form__field-text {
   width: 100%;
   min-height: 43px;
+  margin-bottom: 12px;
   padding: 7px 30px;
   border: 0.2px solid $color-blue;
   border-radius: 29px;
@@ -12,8 +13,19 @@
   font-size: 12px;
   line-height: 28px;
   color: $color-text-primary;
-  &::placeholder {
+  &:last-of-type {
+    margin-bottom: 18px;
+    @include media(M) {
+      margin-bottom: 13px;
+    }
+  }
+  & input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
     opacity: 0.5;
+    @include media(M) {
+      font-size: 16px;
+    }
   }
   &:focus-within {
     outline: 1px solid $bg-secondary;
@@ -39,15 +51,5 @@ legend {
     margin-bottom: 13px;
     font-size: 16px;
     line-height: 20px;
-  }
-}
-
-.form__field-text {
-  margin-bottom: 12px;
-  &:last-of-type {
-    margin-bottom: 18px;
-    @include media(M) {
-      margin-bottom: 13px;
-    }
   }
 }

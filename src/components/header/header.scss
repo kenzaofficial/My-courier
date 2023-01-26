@@ -84,22 +84,18 @@
 }
 
 .menu__list {
+  @include media(S) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   margin: 0;
   line-height: 1;
   @include media(M) {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px 10px;
   }
   @include media(XL) {
     column-gap: 30px;
-  }
-  li {
-    @include media(MOBILE) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
   }
 }
 
@@ -137,6 +133,9 @@
   z-index: 3;
   width: 19px;
   height: 12px;
+  @include media(S) {
+    width: 39px;
+  }
   @include media(M) {
     display: none;
   }
@@ -162,6 +161,9 @@
   right: 0;
   bottom: 0;
   width: 12px;
+  @include media(S) {
+    width: 20px;
+  }
 }
 
 .header__burger-marker {
@@ -173,10 +175,23 @@
   border-radius: 2px;
   background-color: $bg-light;
   transition: all 0.3s ease 0s;
+  @include media(S) {
+    width: 30px;
+  }
 }
 
 .header-menu--is-active {
+  li {
+    @include media(MOBILE) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
   @include media(MOBILE) {
+    .menu__list {
+      display: block;
+    }
     .menu__link {
       font-size: 18px;
     }
@@ -191,6 +206,10 @@
   top: 5px;
   transform: rotate(45deg);
   background-color: $bg-secondary;
+  @include media(S) {
+    left: 50%;
+    width: 50%;
+  }
 }
 
 .header-menu--is-active .header__burger-button::after {
@@ -198,6 +217,9 @@
   transform: rotate(-45deg);
   width: 19px;
   background-color: $bg-secondary;
+  @include media(S) {
+    width: 50%;
+  }
 }
 
 .contacts {
