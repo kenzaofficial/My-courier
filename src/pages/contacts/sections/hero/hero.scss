@@ -12,7 +12,8 @@
   }
   .hero__img img {
     @include media(L) {
-      width: 874px;
+      width: 100%;
+      max-width: 874px;
       height: auto;
     }
   }
@@ -31,7 +32,7 @@
   border-radius: 35px;
   background-color: $bg-light;
   @include media(S) {
-    max-width: 350px;
+    max-width: 300px;
     margin: 0;
     justify-self: flex-end;
   }
@@ -75,10 +76,11 @@
 .hero--contacts__body {
   @include media(S) {
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 30px;
+    grid-template-columns: 1fr auto;
+    column-gap: 20px;
   }
   @include media(M) {
+    column-gap: 30px;
     grid-template-columns: 1fr 1fr;
   }
 }

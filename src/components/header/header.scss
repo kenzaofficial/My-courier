@@ -84,11 +84,11 @@
 }
 
 .menu__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   line-height: 1;
   @include media(M) {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px 10px;
   }
   @include media(XL) {
@@ -186,6 +186,9 @@
     }
   }
   @include media(MOBILE) {
+    .menu__list {
+      display: block;
+    }
     .menu__link {
       font-size: 18px;
     }

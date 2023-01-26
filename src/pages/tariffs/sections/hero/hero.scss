@@ -1,7 +1,8 @@
 .hero--tariffs {
   .hero__img img {
     @include media(L) {
-      width: 874px;
+      width: 100%;
+      max-width: 874px;
       height: auto;
     }
   }

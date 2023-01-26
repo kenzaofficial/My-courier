@@ -1,4 +1,55 @@
-{% set benefits = [
+{% set benefits = {
+  first: [
+    { 
+      'img':'./assets/img/tariffs/weight-icon.svg',
+      'title': 'Максимальный вес до 30 кг'
+    },
+    { 'img':'./assets/img/tariffs/insurance-icon.svg',
+      'title': 'Бесплатное страхование'
+    },
+    {  'img':'./assets/img/tariffs/package-icon.svg',
+      'title': 'Бесплатный фирменный конверт'
+    },
+    {  'img':'./assets/img/tariffs/wallet-icon.svg',
+      'title': 'Доступен наложенный платёж'
+    }
+  ],
+  second: [
+    { 'img':'./assets/img/tariffs/weight-icon.svg',
+    'title': 'Неограниченный макс. вес'
+    },
+    { 'img':'./assets/img/tariffs/insurance-icon.svg',
+      'title': 'Бесплатное страхование'
+    },
+    {  'img':'./assets/img/tariffs/package-icon.svg',
+      'title': 'Упаковка согласно габаритам'
+    },
+    {  'img':'./assets/img/tariffs/wallet-icon.svg',
+      'title': 'Доступен наложенный платёж'
+    }
+  ],
+  third: [
+    { 'img':'./assets/img/tariffs/weight-icon.svg',
+    'title': 'Максимальный вес до 15 кг'
+    },
+    { 'img':'./assets/img/tariffs/insurance-icon.svg',
+      'title': 'Обязательное страхование'
+    },
+    {  'img':'./assets/img/tariffs/package-icon.svg',
+      'title': 'Упаковка согласно габаритам'
+    },
+    {  'img':'./assets/img/tariffs/wallet-icon.svg',
+      'title': 'Доступен наложенный платёж'
+    }
+  ]
+} %}
+
+
+
+
+
+
+{# {% set benefits = [
   { 'img':'./assets/img/tariffs/weight-icon.svg',
     'title': 'Максимальный вес до 30 кг'
   },
@@ -11,4 +62,4 @@
   {  'img':'./assets/img/tariffs/wallet-icon.svg',
      'title': 'Доступен наложенный платёж'
   }
-] %}
+] %} #}

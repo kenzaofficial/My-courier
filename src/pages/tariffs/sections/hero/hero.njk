@@ -6,7 +6,7 @@
     <img src="./assets/img/purple-bg.png" width="200" height="160" alt="пурпурный фон">
   </div>
   <div class="container hero__container">
-    <h1>Популярные тарифы</h1>s
+    <h1>Популярные тарифы</h1>
     <ul class="hero__benefits benefits">
       <li class="benefits__item">
         <div class="card-benefits">
@@ -14,7 +14,7 @@
           <p>Доставка в течении 1-2 дня в установленное время</p>
           <div class="card-benefits__alert">Самый быстрый вариант</div>
           <ul class="card-benefits__list">
-            {% for benefit in data.benefits %}
+            {% for benefit in data.benefits.first %}
             {{ list(img=benefit.img, title=benefit.title) }}
             {% endfor %}
           </ul>
@@ -27,7 +27,7 @@
           <p>Отправления любых размеров c фиксированной ценой до 30 кг</p>
           <div class="card-benefits__alert">Самый экономный вариант</div>
           <ul class="card-benefits__list">
-            {% for benefit in data.benefits %}
+            {% for benefit in data.benefits.second %}
             {{ list(img=benefit.img, title=benefit.title) }}
             {% endfor %}
           </ul>
@@ -40,7 +40,7 @@
           <p>Доставка, упаковка и страховка включены в стоимость посылки.</p>
           <div class="card-benefits__alert">Самый удобный вариант</div>
           <ul class="card-benefits__list">
-            {% for benefit in data.benefits %}
+            {% for benefit in data.benefits.third %}
             {{ list(img=benefit.img, title=benefit.title) }}
             {% endfor %}
           </ul>
