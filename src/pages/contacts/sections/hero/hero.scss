@@ -1,7 +1,11 @@
 .hero--contacts {
+  min-height: 870px;
   .list-item__img-wrapper {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: auto;
+    @include media(L) {
+      width: 35px;
+    }
     img {
       width: 100%;
     }
@@ -12,8 +16,68 @@
       height: auto;
     }
   }
+  h1 {
+    margin: -35px 0 30px;
+    @include media(S) {
+      max-width: none;
+      margin: 0 0 55px 0;
+    }
+  }
 }
-//  доделать блок
-// .hero--contacts__list{
 
-// }
+.hero--contacts__list {
+  margin: 60px 0 0 0;
+  padding: 18px 22px 22px;
+  border-radius: 35px;
+  background-color: $bg-light;
+  @include media(S) {
+    margin: 0;
+  }
+  @include media(XL) {
+    margin-top: 30px;
+    padding: 40px 45px;
+  }
+  .list-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content auto;
+    column-gap: 10px;
+    @include media(M) {
+      column-gap: 25px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      @include media(M) {
+        margin-bottom: 30px;
+      }
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+      @include media(L) {
+        font-size: 20px;
+      }
+    }
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      @include media(L) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+.hero--contacts__body {
+  @include media(S) {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+  }
+  @include media(M) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

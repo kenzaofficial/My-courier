@@ -2,11 +2,12 @@
 {% import './data.njk' as data %}
 
 <section class="hero hero--contacts">
-  <div class="hero__img hero__img--tariffs">
-    <img src="./assets/img/tariffs/bg.png" width="200" height="160" alt="пурпурный фон">
+  <div class="hero__img">
+    <img src="./assets/img/purple-bg.png" width="200" height="160" alt="пурпурный фон">
   </div>
   <div class="container hero__container">
-    <h1>Популярные тарифы</h1>
+    <h1>Контактная информация</h1>
+    <div class="hero--contacts__body">
     {% include 'components/form-contacts/form-contacts.njk' %}
     <ul class="hero--contacts__list">
       {% for contact in data.contacts %}
@@ -14,5 +15,6 @@
       linkText=contact.linkText) }}
       {% endfor %}
     </ul>
+  </div>
   </div>
 </section>

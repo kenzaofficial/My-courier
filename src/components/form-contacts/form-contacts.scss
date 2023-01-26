@@ -1,6 +1,16 @@
 .form--contacts {
+  max-width: 300px;
+  @include media(M) {
+    max-width: 516px;
+  }
   textarea {
-    padding: 10px 0;
     min-height: 110px;
+    padding: 10px 0 0;
+  }
+  .form__field-text:last-of-type {
+    margin-bottom: 10px;
+    @include media(M) {
+      margin-bottom: 25px;
+    }
   }
 }
