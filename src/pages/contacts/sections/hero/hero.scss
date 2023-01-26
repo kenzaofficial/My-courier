@@ -26,20 +26,22 @@
 }
 
 .hero--contacts__list {
-  margin: 60px 0 0 0;
+  margin: 60px auto 0;
   padding: 18px 22px 22px;
   border-radius: 35px;
   background-color: $bg-light;
   @include media(S) {
+    max-width: 350px;
     margin: 0;
+    justify-self: flex-end;
   }
-  @include media(XL) {
+  @include media(M) {
+    max-width: none;
     margin-top: 30px;
     padding: 40px 45px;
   }
   .list-item {
     display: grid;
-    align-items: center;
     grid-template-columns: min-content auto;
     column-gap: 10px;
     @include media(M) {
@@ -47,7 +49,7 @@
     }
     &:not(:last-child) {
       margin-bottom: 10px;
-      @include media(M) {
+      @include media(L) {
         margin-bottom: 30px;
       }
     }
@@ -62,7 +64,7 @@
     a {
       font-size: 14px;
       line-height: 20px;
-      @include media(L) {
+      @include media(XL) {
         font-size: 24px;
         line-height: 26px;
       }
@@ -77,7 +79,6 @@
     column-gap: 30px;
   }
   @include media(M) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }

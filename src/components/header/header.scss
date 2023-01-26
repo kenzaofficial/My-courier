@@ -94,13 +94,6 @@
   @include media(XL) {
     column-gap: 30px;
   }
-  li {
-    @include media(MOBILE) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
-  }
 }
 
 .menu__link {
@@ -185,6 +178,13 @@
 }
 
 .header-menu--is-active {
+  li {
+    @include media(MOBILE) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
   @include media(MOBILE) {
     .menu__link {
       font-size: 18px;
