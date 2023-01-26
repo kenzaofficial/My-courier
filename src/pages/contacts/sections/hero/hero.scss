@@ -1,5 +1,8 @@
 .hero--contacts {
   min-height: 870px;
+  @include media(S) {
+    min-height: 700px;
+  }
   .list-item__img-wrapper {
     width: 25px;
     height: auto;
