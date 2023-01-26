@@ -201,8 +201,8 @@
   transform: rotate(45deg);
   background-color: $bg-secondary;
   @include media(S) {
-    width: 50%;
     left: 50%;
+    width: 50%;
   }
 }
 

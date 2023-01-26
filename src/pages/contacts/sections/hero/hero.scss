@@ -1,6 +1,19 @@
-.hero__img img {
-  @include media(L) {
-    width: 874px;
-    height: auto;
+.hero--contacts {
+  .list-item__img-wrapper {
+    width: 15px;
+    height: 15px;
+    img {
+      width: 100%;
+    }
+  }
+  .hero__img img {
+    @include media(L) {
+      width: 874px;
+      height: auto;
+    }
   }
 }
+//  доделать блок
+// .hero--contacts__list{
+
+// }
