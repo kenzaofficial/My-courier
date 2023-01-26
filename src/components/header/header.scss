@@ -84,10 +84,11 @@
 }
 
 .menu__list {
-  @include media(S){
+  @include media(S) {
     display: flex;
     flex-wrap: wrap;
   }
+
   margin: 0;
   line-height: 1;
   @include media(M) {
