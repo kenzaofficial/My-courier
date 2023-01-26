@@ -9,6 +9,7 @@
     min-height: 950px;
   }
   .hero__img {
+    overflow: hidden;
     max-height: 174px;
     text-align: right;
     @include media(M) {

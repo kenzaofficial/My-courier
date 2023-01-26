@@ -11,7 +11,7 @@
     {% include 'components/form-contacts/form-contacts.njk' %}
     <ul class="hero--contacts__list">
       {% for contact in data.contacts %}
-      {{ list( img=contact.img, title=contact.title, desc=contact.description,href=contact.href,
+      {{ list( img=contact.img, title=contact.title,href=contact.href,
       linkText=contact.linkText) }}
       {% endfor %}
     </ul>

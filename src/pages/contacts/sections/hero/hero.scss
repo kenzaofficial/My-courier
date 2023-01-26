@@ -32,7 +32,7 @@
   border-radius: 35px;
   background-color: $bg-light;
   @include media(S) {
-    max-width: 300px;
+    max-width: 240px;
     margin: 0;
     justify-self: flex-end;
   }
@@ -63,6 +63,7 @@
       }
     }
     a {
+      grid-column: 2/-1;
       font-size: 14px;
       line-height: 20px;
       @include media(XL) {
