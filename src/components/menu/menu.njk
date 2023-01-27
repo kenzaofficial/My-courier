@@ -5,7 +5,7 @@
     <ul class="menu__list">
       {% for nav in data.navs %}
         <li>
-          <a href="{{ nav.href }}" class="menu__link {% if pageName == nav.page %}menu__link--is-current{% endif %} ">{{ nav.linkText }}</a>
+          <a href="{{ nav.href }}" class="menu__link {% if pageName == nav.page %}menu__link--is-current{% endif %}">{{ nav.linkText }}</a>
         </li>
       {% endfor %}
     </ul>
