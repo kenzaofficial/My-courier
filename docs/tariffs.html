@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="theme-color" content="#333" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Мой курьер</title>
+  </head>
+
+  <body class="no-js">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__body">
+          <a class="header__logo logo">
+            <img
+              src="assets/img/logo.svg"
+              class="logo__img"
+              alt="my courier logo"
+              width="92"
+              height="20"
+            />
+          </a>
+
+          <!-- menu -->
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li>
+                <a href="index.html" class="menu__link">Отправить посылку</a>
+              </li>
+              <li>
+                <a href="tracking.html" class="menu__link">Отследить</a>
+              </li>
+              <li>
+                <a href="tariffs.html" class="menu__link menu__link--is-current"
+                  >Тарифы</a
+                >
+              </li>
+              <li>
+                <a href="contacts.html" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- end menu -->
+
+          <div class="header__contacts contacts">
+            <a
+              href="tel:+7495-921-34-44"
+              class="
+                contacts__field contacts__field--tel contacts__field--header
+              "
+            >
+              <svg
+                width="21"
+                height="21"
+                aria-hidden="true"
+                role="img"
+                focusable="false"
+                aria-label="telephone"
+              >
+                <use href="./assets/img/sprite.svg#icon-tel"></use>
+              </svg>
+              +7 495 921-34-44</a
+            >
+            <a
+              href="mailto:support@konfzz.ru"
+              class="
+                contacts__field contacts__field--mail contacts__field--header
+              "
+            >
+              <svg
+                width="25"
+                height="21"
+                aria-hidden="true"
+                role="img"
+                focusable="false"
+                aria-label="email"
+              >
+                <use href="./assets/img/sprite.svg#icon-mail"></use>
+              </svg>
+              support@konfzz.ru
+            </a>
+          </div>
+          <button type="button" class="header__burger-button">
+            <span class="header__burger-marker"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero hero--tariffs">
+        <div class="hero__img">
+          <img
+            src="./assets/img/purple-bg.png"
+            width="200"
+            height="160"
+            alt="пурпурный фон"
+          />
+        </div>
+        <div class="container hero__container">
+          <h1>Популярные тарифы</h1>
+          <ul class="hero__benefits benefits">
+            <li class="benefits__item">
+              <div class="card-benefits">
+                <h2>Турбо</h2>
+                <p>Доставка в течении 1-2 дня в установленное время</p>
+                <div class="card-benefits__alert">Самый быстрый вариант</div>
+                <ul class="card-benefits__list">
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/weight-icon.svg" alt="" />
+                    </div>
+                    <h3>Максимальный вес до 30 кг</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img
+                        src="./assets/img/tariffs/insurance-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h3>Бесплатное страхование</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/package-icon.svg" alt="" />
+                    </div>
+                    <h3>Бесплатный фирменный конверт</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/wallet-icon.svg" alt="" />
+                    </div>
+                    <h3>Доступен наложенный платёж</h3>
+                  </li>
+                </ul>
+                <button class="button card-benefits__button" type="button">
+                  Отправить заявку
+                </button>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="card-benefits">
+                <h2>Экспресс</h2>
+                <p>Отправления любых размеров c фиксированной ценой до 30 кг</p>
+                <div class="card-benefits__alert">Самый экономный вариант</div>
+                <ul class="card-benefits__list">
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/weight-icon.svg" alt="" />
+                    </div>
+                    <h3>Неограниченный макс. вес</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img
+                        src="./assets/img/tariffs/insurance-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h3>Бесплатное страхование</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/package-icon.svg" alt="" />
+                    </div>
+                    <h3>Упаковка согласно габаритам</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/wallet-icon.svg" alt="" />
+                    </div>
+                    <h3>Доступен наложенный платёж</h3>
+                  </li>
+                </ul>
+                <button class="button card-benefits__button" type="button">
+                  Отправить заявку
+                </button>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="card-benefits">
+                <h2>Удобный</h2>
+                <p>
+                  Доставка, упаковка и страховка включены в стоимость посылки.
+                </p>
+                <div class="card-benefits__alert">Самый удобный вариант</div>
+                <ul class="card-benefits__list">
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/weight-icon.svg" alt="" />
+                    </div>
+                    <h3>Максимальный вес до 15 кг</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img
+                        src="./assets/img/tariffs/insurance-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h3>Обязательное страхование</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/package-icon.svg" alt="" />
+                    </div>
+                    <h3>Упаковка согласно габаритам</h3>
+                  </li>
+
+                  <li class="list-item">
+                    <div class="list-item__img-wrapper">
+                      <img src="./assets/img/tariffs/wallet-icon.svg" alt="" />
+                    </div>
+                    <h3>Доступен наложенный платёж</h3>
+                  </li>
+                </ul>
+                <button class="button card-benefits__button" type="button">
+                  Отправить заявку
+                </button>
+              </div>
+            </li>
+          </ul>
+          <p class="hero__more-info">
+            Подробно со всеми тарифами можно ознакомиться скачав
+            <a href="#">прайс лист</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--light">
+      <div class="footer__container container">
+        <div class="footer__body">
+          <a class="footer__logo logo">
+            <img
+              src="assets/img/logo.svg"
+              class="logo__img"
+              alt="my courier logo"
+              width="92"
+              height="20"
+            />
+          </a>
+          <!-- menu -->
+          <nav class="footer__menu menu">
+            <ul class="menu__list">
+              <li>
+                <a href="index.html" class="menu__link">Отправить посылку</a>
+              </li>
+              <li>
+                <a href="tracking.html" class="menu__link">Отследить</a>
+              </li>
+              <li>
+                <a href="tariffs.html" class="menu__link menu__link--is-current"
+                  >Тарифы</a
+                >
+              </li>
+              <li>
+                <a href="contacts.html" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- end menu -->
+          <div class="footer__contacts contacts">
+            <a
+              href="tel:+7495-921-34-44"
+              class="
+                contacts__field contacts__field--tel contacts__field--footer
+              "
+            >
+              <svg
+                width="21"
+                height="21"
+                aria-hidden="true"
+                role="img"
+                focusable="false"
+                aria-label="telephone"
+              >
+                <use href="./assets/img/sprite.svg#icon-tel"></use>
+              </svg>
+              +7 495 921-34-44</a
+            >
+          </div>
+        </div>
+        <p>
+          Контактный e-mail support@konfzz.ru<br />
+          Контактный телефон: +7 495 921-34-44 ООО "А+" ИНН 7325109660, ОГРН
+          1117325012298, КПП 732501001<br />
+          Ульяновская обл., г. Ульяновск, ул. Карла Либкнехта, д. 24/5А стр. 1
+          офис 65
+        </p>
+      </div>
+    </footer>
+
+    <div class="overlay visually-hidden"></div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

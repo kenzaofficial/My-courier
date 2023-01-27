@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="theme-color" content="#333" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Мой курьер</title>
+  </head>
+
+  <body class="no-js">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__body">
+          <a class="header__logo logo">
+            <img
+              src="assets/img/logo.svg"
+              class="logo__img"
+              alt="my courier logo"
+              width="92"
+              height="20"
+            />
+          </a>
+
+          <!-- menu -->
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li>
+                <a href="index.html" class="menu__link">Отправить посылку</a>
+              </li>
+              <li>
+                <a href="tracking.html" class="menu__link">Отследить</a>
+              </li>
+              <li>
+                <a href="tariffs.html" class="menu__link">Тарифы</a>
+              </li>
+              <li>
+                <a
+                  href="contacts.html"
+                  class="menu__link menu__link--is-current"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- end menu -->
+
+          <div class="header__contacts contacts">
+            <a
+              href="tel:+7495-921-34-44"
+              class="
+                contacts__field contacts__field--tel contacts__field--header
+              "
+            >
+              <svg
+                width="21"
+                height="21"
+                aria-hidden="true"
+                role="img"
+                focusable="false"
+                aria-label="telephone"
+              >
+                <use href="./assets/img/sprite.svg#icon-tel"></use>
+              </svg>
+              +7 495 921-34-44</a
+            >
+            <a
+              href="mailto:support@konfzz.ru"
+              class="
+                contacts__field contacts__field--mail contacts__field--header
+              "
+            >
+              <svg
+                width="25"
+                height="21"
+                aria-hidden="true"
+                role="img"
+                focusable="false"
+                aria-label="email"
+              >
+                <use href="./assets/img/sprite.svg#icon-mail"></use>
+              </svg>
+              support@konfzz.ru
+            </a>
+          </div>
+          <button type="button" class="header__burger-button">
+            <span class="header__burger-marker"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero hero--contacts">
+        <div class="hero__img">
+          <img
+            src="./assets/img/purple-bg.png"
+            width="200"
+            height="160"
+            alt="пурпурный фон"
+          />
+        </div>
+        <div class="container hero__container">
+          <h1>Контактная информация</h1>
+          <div class="hero--contacts__body">
+            <form action="#" method="POST" class="form form--contacts">
+              <fieldset>
+                <legend>Отправьте нам сообщение</legend>
+              </fieldset>
+              <div class="form__field-text">
+                <label for="sender-name" class="visually-hidden"></label>
+                <input
+                  type="text"
+                  name="sender-name"
+                  required
+                  id="sender-name"
+                  placeholder="ФИО"
+                />
+              </div>
+              <div class="form__field-text">
+                <label for="form-tel" class="visually-hidden"></label>
+                <input
+                  type="tel"
+                  name="form-tel"
+                  required
+                  id="form-tel"
+                  placeholder="Номер телефона"
+                />
+              </div>
+              <div class="form__field-text">
+                <label for="form-title-message" class="visually-hidden"></label>
+                <input
+                  type="text"
+                  name="form-title-message"
+                  required
+                  id="form-title-message"
+                  placeholder="Тема сообщения"
+                />
+              </div>
+              <div class="form__field-text">
+                <label for="form-textarea" class="visually-hidden"></label>
+                <textarea
+                  name="form-textarea"
+                  required
+                  id="form-textarea"
+                  placeholder="Текст сообщения"
+                ></textarea>
+              </div>
+              <button class="button form__button" type="submit">
+                Отправить сообщение
+              </button>
+            </form>
+            <ul class="hero--contacts__list">
+              <li class="list-item">
+                <div class="list-item__img-wrapper">
+                  <img src="./assets/img/contacts/icon_01.svg" alt="" />
+                </div>
+                <h3>Контактный телефон</h3>
+                <a href="tel:+7453213444">+7 495 921-34-44</a>
+              </li>
+
+              <li class="list-item">
+                <div class="list-item__img-wrapper">
+                  <img src="./assets/img/contacts/icon_02.svg" alt="" />
+                </div>
+                <h3>Email</h3>
+                <a href="mailto:support@konfzz.ru">support@konfzz.ru</a>
+              </li>
+
+              <li class="list-item">
+                <div class="list-item__img-wrapper">
+                  <img src="./assets/img/contacts/icon_03.svg" alt="" />
+                </div>
+                <h3>Реквизиты компании</h3>
+                <a href="https://goo.gl/maps/peox76sX7AZfSiCL9"
+                  >ООО &quot;А+&quot; ИНН 7325109660, ОГРН 1117325012298, КПП
+                  732501001 Ульяновская обл., г. Ульяновск, ул. Карла Либкнехта,
+                  д. 24/5А стр. 1 офис 65</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--light">
+      <div class="footer__container container">
+        <div class="footer__body">
+          <a class="footer__logo logo">
+            <img
+              src="assets/img/logo.svg"
+              class="logo__img"
+              alt="my courier logo"
+              width="92"
+              height="20"
+            />
+          </a>
+          <!-- menu -->
+          <nav class="footer__menu menu">
+            <ul class="menu__list">
+              <li>
+                <a href="index.html" class="menu__link">Отправить посылку</a>
+              </li>
+              <li>
+                <a href="tracking.html" class="menu__link">Отследить</a>
+              </li>
+              <li>
+                <a href="tariffs.html" class="menu__link">Тарифы</a>
+              </li>
+              <li>
+                <a
+                  href="contacts.html"
+                  class="menu__link menu__link--is-current"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- end menu -->
+          <div class="footer__contacts contacts">
+            <a
+              href="tel:+7495-921-34-44"
+              class="
+                contacts__field contacts__field--tel contacts__field--footer
+              "
+            >
+              <svg
+                width="21"
+                height="21"
+                aria-hidden="true"
+                role="img"
+                focusable="false"
+                aria-label="telephone"
+              >
+                <use href="./assets/img/sprite.svg#icon-tel"></use>
+              </svg>
+              +7 495 921-34-44</a
+            >
+          </div>
+        </div>
+        <p>
+          Контактный e-mail support@konfzz.ru<br />
+          Контактный телефон: +7 495 921-34-44 ООО "А+" ИНН 7325109660, ОГРН
+          1117325012298, КПП 732501001<br />
+          Ульяновская обл., г. Ульяновск, ул. Карла Либкнехта, д. 24/5А стр. 1
+          офис 65
+        </p>
+      </div>
+    </footer>
+
+    <div class="overlay visually-hidden"></div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
