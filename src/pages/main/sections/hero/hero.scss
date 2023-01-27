@@ -1,7 +1,7 @@
 .hero {
   padding-bottom: 60px;
   background-color: $bg-primary;
-  @include media(M) {
+  @include media(S) {
     min-height: 700px;
     padding: 85px 0;
   }
@@ -9,18 +9,19 @@
     min-height: 950px;
   }
   .hero__img {
+    max-width: 206px;
     max-height: 174px;
-    text-align: right;
+    margin-left: auto;
     overflow: hidden;
-    @include media(M) {
+    @include media(S) {
       position: absolute;
       top: 0;
       right: 0;
       max-width: 430px;
       max-height: 706px;
-      @include media(XL) {
-        max-width: 100%;
-      }
+    }
+    @include media(L) {
+      max-width: 100%;
     }
   }
   h1 {
