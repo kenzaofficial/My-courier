@@ -1,5 +1,5 @@
-{% macro footer(mode = 'dark') %}
-  {% from 'components/menu/menu.njk' import menu %}
+{% from 'components/menu/menu.njk' import menu %}
+{% macro footer(mode = 'dark', pageName = '/') %}
   <footer class="footer footer--{{ mode }}">
     <div class="footer__container container">
       <div class="footer__body">
