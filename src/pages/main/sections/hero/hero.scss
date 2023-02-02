@@ -2,10 +2,10 @@
   padding-bottom: 60px;
   background-color: $bg-primary;
   @include media(S) {
-    min-height: 700px;
+    min-height: 580px;
     padding: 85px 0;
   }
-  @include media(L) {
+  @include media(XL) {
     min-height: 950px;
   }
   .hero__img {
