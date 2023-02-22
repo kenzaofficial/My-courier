@@ -2,7 +2,10 @@
   max-width: 516px;
 }
 
-.form__field-text {
+.form__text-field {
+  input {
+    width: 100%;
+  }
   width: 100%;
   min-height: 43px;
   margin-bottom: 12px;
