@@ -1,3 +1,4 @@
+{% from 'components/button/button.njk' import button %}
 {% from 'components/list/list.njk' import list %}
 {% import './data.njk' as data %}
 
@@ -15,10 +16,10 @@
           <div class="card-benefits__alert">Самый быстрый вариант</div>
           <ul class="card-benefits__list">
             {% for benefit in data.benefits.first %}
-            {{ list(img=benefit.img, title=benefit.title) }}
+              {{ list(img=benefit.img, title=benefit.title) }}
             {% endfor %}
           </ul>
-          <button class="button card-benefits__button" type="button">Отправить заявку</button>
+          {{ button('submit', 'benefits__button', 'Отправить заявку') }}
         </div>
       </li>
       <li class="benefits__item">
@@ -28,10 +29,10 @@
           <div class="card-benefits__alert">Самый экономный вариант</div>
           <ul class="card-benefits__list">
             {% for benefit in data.benefits.second %}
-            {{ list(img=benefit.img, title=benefit.title) }}
+              {{ list(img=benefit.img, title=benefit.title) }}
             {% endfor %}
           </ul>
-          <button class="button card-benefits__button" type="button">Отправить заявку</button>
+          {{ button('submit', 'benefits__button', 'Отправить заявку') }}
         </div>
       </li>
       <li class="benefits__item">
@@ -41,13 +42,14 @@
           <div class="card-benefits__alert">Самый удобный вариант</div>
           <ul class="card-benefits__list">
             {% for benefit in data.benefits.third %}
-            {{ list(img=benefit.img, title=benefit.title) }}
+              {{ list(img=benefit.img, title=benefit.title) }}
             {% endfor %}
           </ul>
-          <button class="button card-benefits__button" type="button">Отправить заявку</button>
+          {{ button('submit', 'benefits__button', 'Отправить заявку') }}
         </div>
       </li>
     </ul>
-    <p class="hero__more-info">Подробно со всеми тарифами можно ознакомиться скачав <a href="#">прайс лист</a></p>
+    <p class="hero__more-info">Подробно со всеми тарифами можно ознакомиться скачав <a href="#">прайс лист</a>
+    </p>
   </div>
 </section>

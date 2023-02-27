@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 40px;
+  border-radius: 29px;
+  background-color: $bg-secondary;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $color-text-secondary;
+  transition: 0.3s;
+  cursor: pointer;
+  &:focus-within {
+    outline: 1px solid $border-primary;
+  }
+  @include media(M) {
+    padding: 15px 40px;
+    font-size: 18px;
+    &:hover {
+      background-color: $bg-thirdly;
+    }
+    &:active {
+      background-color: $color-black;
+    }
+  }
+}
