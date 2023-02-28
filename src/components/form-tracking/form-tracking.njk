@@ -1,12 +1,10 @@
-<form action="#" method="POST" class="form form-tracking">
-    <fieldset>
-      <legend>Введите трек-номер посылки</legend>
-    </fieldset>
-    <div class="form-tracking__body">
-    <div class="form__field-text">
-      <label for="form-addressee" class="visually-hidden"></label>
-      <input type="text" name="form-addressee" required id="form-addressee" placeholder="Номер отслеживания">
-    </div>
+{% from "components/text-field/text-field.njk" import textField %}
+<form action="#" method="POST" class="form form--tracking">
+  <fieldset>
+    <legend>Введите трек-номер посылки</legend>
+  </fieldset>
+  <div class="form-tracking__body">
+    {{textField(name='form-tracking', placeholder = 'Номер отслеживания')}}
     <button class="button form__button" type="submit">Отследить</button>
-</div>
-  </form>
+  </div>
+</form>

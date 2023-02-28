@@ -3,10 +3,11 @@
     max-width: 516px;
   }
   textarea {
+    width: 100%;
     min-height: 110px;
     padding: 10px 0 0;
   }
-  .form__field-text:last-of-type {
+  .form__text-field:last-of-type {
     margin-bottom: 10px;
     @include media(M) {
       margin-bottom: 25px;

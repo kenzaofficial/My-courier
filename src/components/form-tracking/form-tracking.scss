@@ -1,4 +1,4 @@
-.form-tracking {
+.form--tracking {
   margin-bottom: 55px;
 }
 
@@ -7,7 +7,7 @@
     display: flex;
     column-gap: 8px;
   }
-  .form__field-text {
+  .form__text-field {
     @include media(M) {
       width: 100%;
       max-width: 340px;
