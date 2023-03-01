@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   width: 100%;
-  padding: 8px 40px;
+  padding: 8px 10px;
   border-radius: 29px;
   background-color: $bg-secondary;
   font-size: 12px;
@@ -14,13 +14,22 @@
     outline: 1px solid $border-primary;
   }
   @include media(M) {
-    padding: 15px 40px;
+    padding: 10px 12px;
     font-size: 18px;
     &:hover {
-      background-color: $bg-thirdly;
+      background-color: violet;
     }
     &:active {
       background-color: $color-black;
+    }
+  }
+}
+
+.button-primary {
+  @include media(M) {
+    padding: 15px 20px;
+    &:hover {
+      background-color: $bg-thirdly;
     }
   }
 }
