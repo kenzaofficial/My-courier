@@ -1,10 +1,12 @@
 {% from "components/text-field/text-field.njk" import textField %}
+{% from "components/button/button.njk" import button %}
+
 <form action="#" method="POST" class="form form--tracking">
   <fieldset>
     <legend>Введите трек-номер посылки</legend>
   </fieldset>
   <div class="form-tracking__body">
-    {{textField(name='form-tracking', placeholder = 'Номер отслеживания')}}
-    <button class="button form__button" type="submit">Отследить</button>
+    {{ textField(name='form-tracking', placeholder='Номер отслеживания') }}
+    {{ button(type='submit', class='button-primary form__button', text='Отcледить') }}
   </div>
 </form>

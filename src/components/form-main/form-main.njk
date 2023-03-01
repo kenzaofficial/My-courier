@@ -1,12 +1,12 @@
 {% from "components/text-field/text-field.njk" import textField %}
+{% from "components/button/button.njk" import button %}
 <form action="#" method="POST" class="form ">
   <fieldset>
     <legend>Заполните данные для отправки заявки</legend>
   </fieldset>
-  {{ textField(name='form-addressee', placeholder = 'Адрес отправки') }}
-  {{ textField(name='form-destination',placeholder = 'Адрес доставки') }}
-  {{ textField(name='sender-name', placeholder = 'ФИО отправителя') }}
-  {{ textField(name='form-tel',type='tel', placeholder = 'Номер телефона') }}
-
-  <button class="button form__button" type="submit">Отправить заявку </button>
+  {{ textField(name='form-addressee', placeholde ='Адрес отправки') }}
+  {{ textField(name='form-destination',placeholder='Адрес доставки') }}
+  {{ textField(name='sender-name', placeholder='ФИО отправителя') }}
+  {{ textField(name='form-tel',type='tel', placeholder='Номер телефона') }}
+  {{ button(type='submit', class='button-primary form__button', text='Отправить заявку') }}
 </form>
